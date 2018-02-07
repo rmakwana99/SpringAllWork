@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+<!--  connection properties for SCIDR 3.0 Cloud Production  Server  -->
+   <!--  <session-factory>
+         <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+     <property name="hibernate.connection.url">jdbc:sqlserver://scidr-prod.database.windows.net:1433;database=PHMC-MASTER;user=srishtiesdm@scidr;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30</property>
+     <property name="hibernate.connection.username">srishtiesdm</property>
+     <property name="hibernate.connection.password">Srishti#16Esdm</property>
+     JDBC connection pool (use the built-in)
+     <property name="hibernate.c3p0.min_size">5</property>
+      <property name="hibernate.c3p0.max_size">20</property>
+       <property name="hibernate.c3p0.timeout">30</property>
+      <property name="hibernate.c3p0.max_statements">15</property>
+       <property name="hibernate.c3p0.acquire_increment">2</property>
+      <property name="hibernate.c3p0.idle_test_period">5</property>
+
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServer2012Dialect</property>
+        Disable the second-level cache    
+        <property name="show_sql">true</property>          
+        <mapping class="com.srishti.phmc.phob.model.PHMC_PHOB_USER"></mapping>
+        <mapping class="com.srishti.phmc.phob.model.PHMC_PHOB_ONBOARD"></mapping>
+        <mapping class="com.srishti.phmc.om.billing.model.PHMC_OM_BILLING"></mapping>     
+        <mapping class="com.srishti.phmc.om.login.model.PHMC_OM_LOGIN"></mapping>
+        <mapping class="com.srishti.phmc.sopdb.model.PHMC_SOPDB"></mapping>       
+    </session-factory> -->
+   
+   
+   <!-- database connection properties for static server and local computer -->
+   
+	      <session-factory>
+	         <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+	     <property name="hibernate.connection.url">jdbc:sqlserver://122.166.218.213:1433;database=PHMC-MASTER;user=srishtiesdm;loginTimeout=30</property>
+	     <property name="hibernate.connection.username">srishtiesdm</property>
+	     <property name="hibernate.connection.password">srishti@2017</property>
+	    
+	     <property name="hibernate.c3p0.min_size">5</property>
+	      <property name="hibernate.c3p0.max_size">20</property>
+	       <property name="hibernate.c3p0.timeout">30</property>
+	      <property name="hibernate.c3p0.max_statements">15</property>
+	       <property name="hibernate.c3p0.acquire_increment">2</property>
+	      <property name="hibernate.c3p0.idle_test_period">5</property>
+	
+	        <property name="hibernate.dialect">org.hibernate.dialect.SQLServer2012Dialect</property>
+	 
+	        <property name="show_sql">true</property>          
+	        <mapping class="com.srishti.phmc.phob.model.PHMC_PHOB_USER"></mapping>
+	        <mapping class="com.srishti.phmc.phob.model.PHMC_PHOB_ONBOARD"></mapping>
+	        <mapping class="com.srishti.phmc.om.billing.model.PHMC_OM_BILLING"></mapping>     
+	        <mapping class="com.srishti.phmc.om.login.model.PHMC_OM_LOGIN"></mapping>
+	        <mapping class="com.srishti.phmc.sopdb.model.PHMC_SOPDB"></mapping>        
+	    </session-factory>
+	    
+    <!-- database connection properties for Test static server and local computer for testing  -->
+    
+    <!-- <session-factory>
+         <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+     <property name="hibernate.connection.url">jdbc:sqlserver://122.166.218.213\\TEST:1434;database=PHMC-MASTER;loginTimeout=30</property>
+     <property name="hibernate.connection.username">phmc-test</property>
+     <property name="hibernate.connection.password">srishti@payhind</property>
+     <property name="hibernate.c3p0.min_size">5</property>
+      <property name="hibernate.c3p0.max_size">20</property>
+       <property name="hibernate.c3p0.timeout">30</property>
+      <property name="hibernate.c3p0.max_statements">15</property>
+       <property name="hibernate.c3p0.acquire_increment">2</property>
+      <property name="hibernate.c3p0.idle_test_period">5</property>
+
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServer2012Dialect</property>
+
+        <property name="show_sql">true</property>          
+        <mapping class="com.srishti.phmc.phob.model.PHMC_PHOB_USER"></mapping>
+        <mapping class="com.srishti.phmc.phob.model.PHMC_PHOB_ONBOARD"></mapping>
+        <mapping class="com.srishti.phmc.om.billing.model.PHMC_OM_BILLING"></mapping>     
+        <mapping class="com.srishti.phmc.om.login.model.PHMC_OM_LOGIN"></mapping>  
+        <mapping class="com.srishti.phmc.sopdb.model.PHMC_SOPDB"></mapping>
+    </session-factory> -->
+</hibernate-configuration>
